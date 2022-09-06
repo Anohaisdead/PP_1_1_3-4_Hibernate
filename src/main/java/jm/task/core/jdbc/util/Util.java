@@ -2,6 +2,7 @@ package jm.task.core.jdbc.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Util {
@@ -12,6 +13,7 @@ public class Util {
     private static Connection connection;
 
     public static Connection getConnection() {
+
 
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
