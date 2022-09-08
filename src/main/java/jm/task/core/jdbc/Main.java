@@ -9,7 +9,7 @@ public class Main {
     private static final UserDao userDao = new UserDaoJDBCImpl();
     public static void main(String[] args) {
         userDao.createUsersTable();
-        userDao.saveUser("Ivan", "Petrov", (byte) 20);
+        userDao.saveUser("Ilya", "Petrov", (byte) 20);
         System.out.println("User с именем Ivan добавлен в базу данных");
         userDao.saveUser("Petr", "Ivanov", (byte) 25);
         System.out.println("User с именем Petr добавлен в базу данных");
